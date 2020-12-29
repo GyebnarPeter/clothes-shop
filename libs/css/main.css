@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap");
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #212331;
+}
+
+/* --------------------------- HEADER --------------------------- */
+.header-wrapper {
+  width: 100%;
+  background: #212331;
+  border-top: 5px solid #474b61;
+  border-bottom: 1px solid #474b61;
+}
+
+header {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header-top {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  color: #99a9b5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+}
+
+.header-top-phone {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-top-phone svg {
+  width: 20px;
+  height: 20px;
+  fill: #99a9b5;
+  margin-right: 10px;
+}
+
+.header-top-social {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 1px solid #474b61;
+  border-left: 1px solid #474b61;
+  padding: 0 50px;
+}
+.header-top-social svg {
+  width: 17px;
+  height: 17px;
+  fill: #99a9b5;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header-top-social svg:last-child {
+  margin: 0;
+}
+.header-top-social #facebook-logo:hover {
+  fill: blue;
+}
+.header-top-social #twitter-logo:hover {
+  fill: #73dbfd;
+}
+.header-top-social #instagram-logo:hover {
+  fill: #ffee8f;
+}
+.header-top-social #pinterest-logo:hover {
+  fill: red;
+}
+.header-top-social #youtube-logo:hover {
+  fill: red;
+}
+
+.header-top-nav {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.header-top-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.header-top-nav ul li a {
+  text-decoration: none;
+  color: #99a9b5;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+.header-top-nav ul li a:hover {
+  color: #00bcd4;
+}
+.header-top-nav ul li #wishlist-btn {
+  color: white;
+  background: #00bcd4;
+  padding: 5px 10px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.header-top-nav ul li #wishlist-btn:hover {
+  background: #99a9b5;
+}
+.header-top-nav svg {
+  width: 8px;
+  height: 8px;
+  fill: #99a9b5;
+}
+
+/*# sourceMappingURL=main.css.map */

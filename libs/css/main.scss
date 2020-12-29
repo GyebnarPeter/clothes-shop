@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+$darkblue: #212331;
+$lightblue: #00bcd4;
+$lightgrey: #99a9b5;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: $darkblue;
+}
+
+
+/* --------------------------- HEADER --------------------------- */
+
+.header-wrapper {
+    width: 100%;
+    background: $darkblue;
+    border-top: 5px solid #474b61;
+    border-bottom: 1px solid #474b61;
+}
+
+header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-top {
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    color: $lightgrey;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
+.header-top-phone {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    svg {
+        width: 20px;
+        height: 20px;
+        fill: $lightgrey;
+        margin-right: 10px;
+    }
+}
+
+.header-top-social {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #474b61;
+    border-left: 1px solid #474b61;
+    padding: 0 50px;
+
+    svg {
+        width: 17px;
+        height: 17px;
+        fill: $lightgrey;
+        margin-right: 15px;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    svg:last-child {
+        margin: 0;
+    }
+
+    #facebook-logo:hover {
+        fill: blue;
+    }
+
+    #twitter-logo:hover {
+        fill: rgb(115, 219, 253);
+    }
+
+    #instagram-logo:hover {
+        fill: rgb(255, 238, 143);
+    }
+
+    #pinterest-logo:hover {
+        fill: red;
+    }
+
+    #youtube-logo:hover {
+        fill: red;
+    }
+}
+
+.header-top-nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+
+            a {
+                text-decoration: none;
+                color: $lightgrey;
+                margin-right: 20px;
+                transition: .5s;
+            }
+
+            a:hover {
+                color: $lightblue;
+            }
+
+            #wishlist-btn {
+                color: white;
+                background: $lightblue;
+                padding: 5px 10px;
+                border-radius: 3px;
+                transition: .5s;
+            }
+
+            #wishlist-btn:hover {
+                background: $lightgrey;
+            }
+        }
+    }
+
+    svg {
+        width: 8px;
+        height: 8px;
+        fill: $lightgrey;
+    }
+}
