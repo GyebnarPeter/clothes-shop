@@ -15,6 +15,7 @@ $lightgrey: #99a9b5;
 
 body {
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -77,24 +78,24 @@ header {
         margin: 0;
     }
 
-    #facebook-logo:hover {
-        fill: blue;
+    .facebook-logo:hover {
+        fill: rgb(85, 85, 255);
     }
 
-    #twitter-logo:hover {
+    .twitter-logo:hover {
         fill: rgb(115, 219, 253);
     }
 
-    #instagram-logo:hover {
+    .instagram-logo:hover {
         fill: rgb(255, 238, 143);
     }
 
-    #pinterest-logo:hover {
-        fill: red;
+    .pinterest-logo:hover {
+        fill: rgb(255, 77, 77);
     }
 
-    #youtube-logo:hover {
-        fill: red;
+    .youtube-logo:hover {
+        fill: rgb(255, 0, 0);
     }
 }
 
@@ -279,6 +280,262 @@ nav {
 }
 
 
+/* --------------------------- FOOTER --------------------------- */
+
+main {
+    height: 600px;
+}
+
+footer {
+    width: 100%;
+    background: $darkblue;
+    color: $lightgrey;
+    padding-top: 100px;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+
+    h3 {
+        color: #feffff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    h3:after {
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 8px 0 0 8px;
+        border-color: #f44336 transparent transparent transparent;
+        transform: rotate(180deg);
+        display: inline-block;
+        margin: 0 0 7px 5px;
+    }
+}
+
+.footer-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-box {
+    width: 25%;
+    padding: 15px;
+}
+
+.footer-contact {
+
+    h3 + div {
+        display: block;
+    }
+    
+    div {
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .separator {
+        border-bottom: 1px solid rgba(177, 177, 177, 0.2);
+        margin: 40px 0;
+    }
+
+    svg {
+        margin-right: 10px;
+    }
+
+    span span {
+        color: $lightblue;
+    }
+
+    svg {
+        width: 17px;
+        height: 17px;
+        fill: $lightgrey;
+    }
+} 
+
+.footer-tags {
+    
+    a {
+        text-decoration: none;
+        color: $lightgrey;
+        border: 1px solid $lightgrey;
+        height: 30px;
+        padding: 0 10px;
+        margin: 3px;
+        display: inline-flex;
+        align-items: center;
+        transition: .5s;
+    }
+
+    a:hover {
+        color: white;
+        background: $lightblue;
+        border: 1px solid $lightblue;
+    }
+}
+
+.footer-useful-links {
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: flex;
+            align-items: center;
+            height: 50px;
+            border-bottom: 1px solid rgba(177, 177, 177, 0.2);
+
+            a {
+                text-decoration: none;
+                color: $lightgrey;
+                transition: .5s;
+            }
+
+            a:hover {
+                color: $lightblue;
+            }
+
+            a:before {
+                content: "";
+                width: 5px;
+                height: 5px;
+                border-radius: 50%;
+                background: $lightblue;
+                display: inline-block;
+                margin-right: 20px;
+                transform: translateY(-3px);
+            }
+        }
+    }
+}
+
+.footer-newsletter {
+
+    form {
+        margin: 30px 0;
+        display: flex;
+        align-items: center;
+
+        input[type=email] {
+            border: 1px solid rgba(177, 177, 177, 0.2);
+            background: #181828;
+            height: 45px;
+            width: 100%;
+            padding-left: 20px;
+            color: $lightgrey;
+        }
+
+        input[type=submit] {
+            height: 45px;
+            width: 45px;
+            background: rgba(177, 177, 177, 0.2);
+            border: none;
+            color: $lightgrey;
+            transition: .5s;
+        }
+
+        input[type=submit]:hover {
+            background: $lightblue;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    form + p {
+        color:rgba(177, 177, 177, 0.6);
+        font-size: 12px;
+    }
+    
+    span {
+        color: $lightblue;
+    }
+}
+
+.footer-bottom-area {
+    width: 100%;
+    background:  #181828;
+    border-top: 1px solid rgba(177, 177, 177, 0.2);
+    margin-top: 100px;
+}
+
+.footer-bottom-area-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.footer-bottom-area-copyright {
+
+    span {
+        color: $lightblue;
+    }
+}
+
+.footer-bottom-area-nav {
+    
+    a {
+        text-decoration: none;
+        color: $lightgrey;
+        margin: 0 15px;
+        transition: .5s;
+    }
+
+    a:hover {
+        color: $lightblue;
+    }
+}
+
+.footer-bottom-area-social {
+
+    svg {
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        margin: 0 5px;
+    }
+
+    svg:hover {
+        fill: #feffff;
+    }
+
+    .facebook-logo {
+        fill: rgb(85, 85, 255);
+    }
+
+    .twitter-logo {
+        fill: rgb(115, 219, 253);
+    }
+
+    .instagram-logo {
+        fill: rgb(255, 238, 143);
+    }
+
+    .pinterest-logo {
+        fill: rgb(255, 77, 77);
+    }
+
+    .youtube-logo {
+        fill: rgb(255, 0, 0);
+    }
+}
+
+
 @media screen and (max-width: 1200px) {
 
     .header-top-wrapper {
@@ -294,7 +551,7 @@ nav {
         transform: translateX(-20px);
 
         svg:first-child {
-            displaY: none;
+            display: none;
         }
     }
 
@@ -344,4 +601,41 @@ nav {
     .mini-search {
         display: flex;
     }
+
+    .footer-box {
+        width: 50%;
+    }
+
+    .footer-bottom-area-wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .footer-bottom-area-nav {
+        margin: 35px 0;
+    }
 }
+
+@media screen and (max-width: 992px) {
+
+    .footer-wrapper {
+        grid-template-areas: 
+            'contact tags'
+            'useful-links newsletter';
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer-wrapper {
+        grid-template-areas: 
+            'contact'
+            'tags'
+            'useful-links'
+            'newsletter';
+    }
+
+    .footer-box {
+        width: 100%;
+    }
+}
+
