@@ -466,6 +466,7 @@ footer h3:after {
   color: #5F727F;
   font-size: 1.3em;
   font-weight: 300;
+  padding: 0 20px;
 }
 
 .new-products-wrapper {
@@ -531,6 +532,100 @@ footer h3:after {
   width: 30%;
 }
 
+/* --------------------------- WHY US --------------------------- */
+.why-us {
+  width: 100%;
+  display: flex;
+}
+.why-us .box-1 {
+  background: #393d50;
+}
+.why-us .box-2 {
+  background: #00c3d4;
+}
+.why-us .box-3 {
+  background: #fec53d;
+}
+
+.why-us-box {
+  flex-grow: 1;
+  flex-basis: 0;
+  text-align: center;
+  color: white;
+  padding: 70px 50px;
+}
+.why-us-box svg {
+  width: 50px;
+  height: 50px;
+  fill: white;
+}
+.why-us-box h2 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+  margin: 50px 0;
+}
+.why-us-box p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+/* --------------------------- BUY INFO --------------------------- */
+.buy-info {
+  width: 100%;
+  max-width: 1200px;
+  margin: 100px auto;
+  display: flex;
+}
+
+.buy-info-box {
+  flex-grow: 1;
+  flex-basis: 0;
+  margin: 20px;
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.buy-info-box p {
+  color: #5f727f;
+  font-size: 14px;
+  width: 80%;
+}
+.buy-info-box ul {
+  list-style: none;
+  padding: 0;
+  color: #5f727f;
+  font-size: 14px;
+}
+.buy-info-box ul li {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+.buy-info-box ul li svg {
+  width: 15px;
+  height: 15px;
+  fill: #00bcd4;
+  margin-right: 10px;
+}
+
+.buy-info-box-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buy-info-box-head h3 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  color: #3c3950;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+.buy-info-box-head svg {
+  width: 50px;
+  height: 50px;
+  fill: #3c3950;
+}
+
 @media screen and (max-width: 1200px) {
   .header-top-wrapper {
     display: none;
@@ -549,7 +644,7 @@ footer h3:after {
   }
 
   nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     background: #dfe5e8;
@@ -595,6 +690,10 @@ footer h3:after {
     width: 33.333%;
   }
 
+  .why-us {
+    flex-direction: column;
+  }
+
   .footer-box {
     width: 50%;
   }
@@ -610,6 +709,22 @@ footer h3:after {
 @media screen and (max-width: 992px) {
   .new-product {
     width: 50%;
+  }
+
+  .buy-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .buy-info-box p {
+    width: 100%;
+  }
+  .buy-info-box ul li {
+    justify-content: center;
+  }
+
+  .buy-info-box-head {
+    flex-direction: column-reverse;
   }
 
   .footer-wrapper {
