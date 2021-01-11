@@ -282,10 +282,6 @@ nav {
 
 /* --------------------------- FOOTER --------------------------- */
 
-main {
-    height: 600px;
-}
-
 footer {
     width: 100%;
     background: $darkblue;
@@ -536,6 +532,114 @@ footer {
 }
 
 
+/* --------------------------- SLIDER --------------------------- */
+
+.slider {
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
+
+
+/* --------------------------- NEW PRODUCTS --------------------------- */
+
+.new-products {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.new-products-head {
+    margin: 100px 0;
+
+    h2 {
+        text-transform: uppercase;
+        color: $darkblue;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3em;
+    }
+
+    p {
+        color: #5F727F;
+        font-size: 1.3em;
+        font-weight: 300;
+    }
+}
+
+.new-products-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.new-product {
+    width: 25%;
+    margin-bottom: 50px;
+    padding: 0 15px;
+    position: relative;
+
+    img {
+        width: 100%;
+    }
+}
+
+.product-name-wrapper {
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 0;
+}
+
+.product-name {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    background: white;
+    cursor: pointer;
+    transition: .5s;
+
+    h4 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        color: $darkblue;
+        text-transform: uppercase;
+        margin: 0;
+        transition: .5s;
+    }
+
+    span {
+        display: block;
+        width: 20%;
+        height: 1px;
+        background: $lightblue;
+        margin: 5px auto;
+        transition: .5s;
+    }
+
+    p {
+        margin: 0;
+        font-size: 14px;
+    }
+}
+
+.product-name:hover {
+    background: $darkblue;
+    color: white;
+
+    h4 {
+        color: white;
+    }
+
+    span {
+        width: 30%;
+    }
+}
+
+
+
 @media screen and (max-width: 1200px) {
 
     .header-top-wrapper {
@@ -602,6 +706,10 @@ footer {
         display: flex;
     }
 
+    .new-product {
+        width: 33.333%;
+    }
+
     .footer-box {
         width: 50%;
     }
@@ -615,16 +723,26 @@ footer {
     }
 }
 
+
 @media screen and (max-width: 992px) {
+
+    .new-product {
+        width: 50%;
+    }
 
     .footer-wrapper {
         grid-template-areas: 
             'contact tags'
             'useful-links newsletter';
     }
+
 }
 
 @media screen and (max-width: 768px) {
+
+    .new-product {
+        width: 100%;
+    }
 
     .footer-wrapper {
         grid-template-areas: 
