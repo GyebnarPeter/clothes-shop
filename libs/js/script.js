@@ -10,3 +10,16 @@ navBtn.onclick = () => {
 navCloseBtn.onclick = () => {
     nav.classList.remove("nav-toggle");
 }
+
+// Scroll top
+let scrollUpIcon = document.querySelector(".scroll-up");
+
+window.onscroll = () => {
+    scrollUpIcon.style.display = document.documentElement.scrollTop > 400 ? "flex" : "none";
+}
+
+scrollUpIcon.onclick = () => {
+    $("html").animate({
+        scrollTop: 0
+    }, 800);
+}
