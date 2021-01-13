@@ -813,6 +813,7 @@ footer {
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    border: 1px solid rgba(177, 177, 177, 0.2);
 
     img {
         width: 100%;
@@ -1048,6 +1049,10 @@ footer {
     .products-box-wrapper {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 3em;
+    }
+
+    .product-box {
+        margin: 0 20px;
     }
 
     .footer-wrapper {

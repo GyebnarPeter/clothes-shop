@@ -686,6 +686,7 @@ footer h3:after {
   flex-direction: column;
   align-items: center;
   cursor: pointer;
+  border: 1px solid rgba(177, 177, 177, 0.2);
 }
 .product-box img {
   width: 100%;
@@ -886,6 +887,10 @@ footer h3:after {
   .products-box-wrapper {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 3em;
+  }
+
+  .product-box {
+    margin: 0 20px;
   }
 
   .footer-wrapper {
